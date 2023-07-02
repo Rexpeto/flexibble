@@ -134,6 +134,29 @@ body {
   @apply py-5 px-8 border-b border-nav-border dark:border-gray-800 gap-4 dark:bg-gray-900 dark:text-white;
 }
 
+.nav-link {
+  @apply inline-block relative opacity-75
+}
+
+.nav-link:hover {
+  @apply opacity-100
+}
+
+.nav-link::before {
+  transition: 300ms;
+  content: "";
+  @apply absolute h-1 top-6 bg-gray-700 dark:bg-white;
+}
+
+.nav-link::before {
+  width: 0%;
+  bottom: 10px;
+}
+
+.nav-link:hover::before {
+  width: 100%;
+}
+
 /* Profile Menu */
 .profile_menu-items {
   @apply flex-col absolute right-1/2 translate-x-1/2 mt-3 p-7 sm:min-w-[300px] min-w-max rounded-xl bg-white border border-nav-border shadow-menu;
