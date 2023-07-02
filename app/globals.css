@@ -131,7 +131,7 @@ body {
 
 /* Navbar */
 .navbar {
-  @apply py-5 px-8 border-b border-nav-border gap-4 dark:bg-gray-900 dark:text-white;
+  @apply py-5 px-8 border-b border-nav-border dark:border-gray-800 gap-4 dark:bg-gray-900 dark:text-white;
 }
 
 /* Profile Menu */
